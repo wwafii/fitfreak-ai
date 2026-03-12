@@ -1,0 +1,12 @@
+ # Backend
+    2 backend/target/
+    3 backend/.env
+    4 backend/*.lock
+    5
+    6 # Frontend
+    7 frontend/node_modules/
+    8 frontend/dist/
+    9 frontend/.env.local
+   10
+   11 # OS
+   12 .DS_Store

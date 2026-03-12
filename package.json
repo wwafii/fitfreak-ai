@@ -1,0 +1,15 @@
+{
+  "name": "fitfreak-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"cd backend && cargo run\" \"cd frontend && npm run dev\"",
+    "build": "cd frontend && npm run build && cd ../backend && cargo build --release",
+    "start": "cd backend && cargo run --release",
+    "db:migrate": "cd backend && sqlx migrate run",
+    "setup": "npm install && cd frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
